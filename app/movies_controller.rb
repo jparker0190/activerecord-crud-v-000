@@ -24,6 +24,8 @@ end
 
 def can_be_created_in_a_block(args = nil)
   Movie.create do |m|
+    m.tile = args
+    m.release_date = args
   end
 end
 
