@@ -24,8 +24,7 @@ end
 
 def can_be_created_in_a_block(args = nil)
   Movie.create do |m|
-     m.title = args.keys.first
-     m.release_date = args.keys.last
+    m.args
   end
 end
 
